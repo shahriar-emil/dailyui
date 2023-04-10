@@ -1,14 +1,24 @@
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: white;
     text-align: center;
+    font-size: 16px;
+    margin: auto;
 }
 
 .main-container {
     width: 840px;
-    height: 600px;
+    height: 640px;
     background-color: #c0c1fd;
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 24px;
 }
 
@@ -32,28 +42,95 @@ body {
     align-items: center;
 }
 
+.flex-input {
+    justify-content: flex-start;
+}
+
+.gap-24 {
+    gap: 16px;
+}
+
+.flex-left {
+    align-items: flex-start;
+}
+
+.flex-input-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+.flex-input-field input,button {
+    width: 100%;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid lightslategray;
+    border-radius: 8px;
+}
+
+.flex-input-field label {
+    font-weight: 700;
+}
+
+.flex-input-field button {
+    font-weight: 700;
+    padding: 12px 12px 12px 12px;
+
+}
+
+.divider-16 {
+    height: 4px;
+}
+
+.create-user, .social-id {
+    padding: 8px 36px 8px 36px;
+}
+
+.social-id {
+    
+}
+
 .card {
     width: 95%;
     height: 95%;
     background-color: white;
-    border: 1px solid black;
+    border-radius: 16px;
 }
 
 .card-panel {
     width: 100%;
-    border: 2px solid black;
 }
 
 .card-panel-left {
     display: flex;
     flex-direction: column;
     background-color: #8385FB;
+    border-radius: 16px 0 0 16px;
+    padding-top: 40px;
+}
+
+.card-panel-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 40px;
+    border-radius: 0px 16px 16px 0px;
 }
 
 .card-title {
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 24px;
+    padding: 24px 24px 24px 36px;
+}
+
+
+.card-title h2 {
+    margin: 0px;
+}
+
+.card-title p {
+    margin: 0px;
 }
 
 .card-image {
@@ -63,7 +140,8 @@ body {
     overflow: hidden;   
     -webkit-mask-image: -webkit-radial-gradient(white, black); /* use a radial gradient as the mask */
     mask-image: radial-gradient(white, black); /* use a radial gradient as the mask */
-  }
+    border-radius: 0 0 0 16px;
+}
 
 .card-image img {
     width: 100%;
@@ -76,22 +154,43 @@ body {
     
 }
 
+.light-text {
+    font-weight: 400;
+}
+.normal-text {
+    font-weight: 500;
+}
+
 .strong-text {
     font-weight: 700;
 }
 
 .text-m {
-    font-size: 16px
+    font-size: 1rem;
 }
 
 .text-l {
-    font-size: 18px;
+    font-size: 1.25rem;
 }
 
-.color-primary {
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.color-primary-20 {
     color: #c0c1fd;
 }
 
-.color-background {
+.color-primary {
+    color: #8385FB;
+    background-color: #fff;
+}
+
+.color-neutral {
+    color: #333333;
+}
+
+.color-primary-inverse {
+    background-color: #8385FB;
     color: #fff;
 }
