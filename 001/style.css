@@ -65,12 +65,12 @@ body {
 .flex-input-field input,button {
     width: 100%;
     padding: 8px 8px 8px 8px;
-    border: 1px solid lightslategray;
+    border: 1px solid lightgrey;
     border-radius: 8px;
 }
 
 .flex-input-field label {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .flex-input-field button {
